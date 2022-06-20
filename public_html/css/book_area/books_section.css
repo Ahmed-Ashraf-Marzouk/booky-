@@ -1,0 +1,13 @@
+/* Book Area */
+main{
+    margin-top: 3%;
+}
+#book-area{
+    width: 100%;
+    box-sizing: border-box;
+    position:relative;
+}
+
+#book-area *{
+    box-sizing: border-box;
+}

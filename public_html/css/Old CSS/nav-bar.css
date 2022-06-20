@@ -1,0 +1,90 @@
+#nav-bar {
+    --Black: rgba(0, 0, 0, 0.2);
+    background-color: var(--bg-light);
+    padding: 2rem 3rem 0.5rem;
+    font-size: 1.5rem;
+    box-shadow: 0 0 16px -11px var(--Black), -100px 19px 19px -27px var(--Black), 100px 19px 16px -27px var(--Black);
+    z-index: 1;
+}
+
+
+#nav-bar > ul, li{
+    list-style: none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+
+#nav-bar > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+
+#nav-bar section {
+    flex: 0.5;
+    display: flex;
+    gap: 7rem;
+    justify-content: space-between;
+}
+
+
+#nav-bar section li{
+    flex: 1;
+    text-align: center;
+    position: relative;
+}
+
+
+#nav-bar section a{
+    text-align: center;
+    position: relative;
+    transition: all 100ms cubic-bezier(1, 0.58, 0, 0.39);
+    color: black;
+}#nav-bar section a:hover{
+    color: var(--Orange);
+}#nav-bar section a:active{
+    color: var(--Orange);
+    font-size: 90%;
+    box-shadow: inset 0px 0px 0.3rem 0rem rgb(0 0 0 / 60%);
+    border-radius: 2.5rem;
+    border: 0.3rem solid var(--bg-light);
+    padding: 0.6rem 1.1rem;
+}
+
+
+#nav-bar section a::after{
+    display: block;
+    position: absolute;
+    content: '';
+    transition: width 100ms cubic-bezier(1, 0.58, 0, 0.39);
+    width: 0;
+}#nav-bar section a:hover::after{
+    width: 85%;
+    height: 2.7px;
+    background-color: var(--Orange);
+    left: 7.5%;
+}#nav-bar section a:active::after{
+    width: 0%;
+    background-color: var(--Orange);
+    transition: none;
+
+}
+
+
+#nav-bar a {
+    text-decoration: none;
+}#nav-bar a:hover{
+    transform: none;
+}
+
+
+#nav-bar-logo a{
+    font-family: 'DM Serif Display';
+    font-weight: bold;
+    font-size: 3.5rem;
+    letter-spacing: 0.3rem
+}

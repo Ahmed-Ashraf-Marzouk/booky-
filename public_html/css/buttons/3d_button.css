@@ -1,0 +1,33 @@
+.button-3d{
+    border: none;
+  position: relative;
+  background-color: #F2E4D0;
+  width: fit-content;
+  padding: 1% 3%;
+  transform: rotateX(-40deg);
+  user-select: none;
+  font-family: var(--Serif);
+  font-size: 2rem;
+  
+}
+
+.button-3d::after{
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 0%;
+  padding: 10% 50%;
+  display: block;
+  background-color: #E8DBC8;
+  width: fit-content;
+}
+
+.button-3d.active:active{
+  color:#FC4F3F;
+  transform: translateY(10px) rotateX(-35deg);
+}
+
+.button-3d.active:active:after{
+
+  transform: translateY(-10px) scaleY(0.5)
+}

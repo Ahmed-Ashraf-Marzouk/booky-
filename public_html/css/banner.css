@@ -1,0 +1,53 @@
+#banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bg-dark);
+    box-shadow: 0rem 0rem 0.8rem -0.7rem black;
+    width: 90%;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#banner .text{
+    width: fit-content;
+    display: inline-block;
+    font-family: 'DM Serif Display';
+    color: var(--Orange);
+}
+
+#banner .title {
+    font-family: var(--Serif);
+    color:  var(--Orange);
+    margin-top: 2rem;
+    font-size: 5rem;
+}
+
+#banner .subtitle {
+    font-size: 3rem;
+    font-family: var(--Serif);
+}
+
+
+#banner img{
+    margin: 8rem 0;
+    width: 25%;
+} 
+
+#banner .animated{
+    animation: MoveUpDown 1.5s ease-in-out infinite;
+    position: relative;
+    left: 0;
+    bottom: 0;
+}
+      
+@keyframes MoveUpDown {
+    0%, 100% {
+      bottom: 0;
+    }
+    50% {
+      bottom: 10px;
+    }
+  }
+/* ************************ */

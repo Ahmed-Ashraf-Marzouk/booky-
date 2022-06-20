@@ -1,0 +1,28 @@
+.text-input {
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.6), inset -1px -1px 2px rgba(0, 0, 0, 0.6);
+    width: 100%;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.rounded {
+    border-radius: 100px;
+}
+
+.text-input input{
+    border: none;
+    background: none;
+    font-family: 'M PLUS Rounded 1c';
+    font-weight: bold;
+    margin: 0 1rem;
+    width: 100%;
+    font-size: 100%;
+}
+
+.text-input input:focus-visible{
+    outline: none;
+}
